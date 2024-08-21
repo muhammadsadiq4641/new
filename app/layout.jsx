@@ -1,4 +1,4 @@
-import { PT_Sans, Bungee } from "next/font/google";
+import { PT_Sans,  Pacifico } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./redux-provider";
 import "antd/dist/antd.min.css";
@@ -8,10 +8,10 @@ const ptSans = PT_Sans({
   weight: ["400"],
 });
 
-const bungee = Bungee({
+const pacifico = Pacifico({
   subsets: ["latin"],
   weight: ["400"],
-  variable: "--font-bungee",
+  variable: "--font-pacifico",
 });
 
 export const metadata = {
@@ -25,7 +25,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${ptSans.className} ${bungee.variable}`}>
+      <body className={`${ptSans.className} ${pacifico.variable}`}>
         <Providers>{children}</Providers>
       </body>
     </html>

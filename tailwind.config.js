@@ -1,3 +1,5 @@
+const { Pacifico } = require('next/font/google');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -26,7 +28,7 @@ module.exports = {
         secondary: "#6F767E",
       },
       fontFamily: {
-        bungee: ["var(--font-bungee)"],
+        Pacifico: ["var(--font-Pacifico)"],
       },
     },
   },
